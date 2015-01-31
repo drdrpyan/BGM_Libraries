@@ -1,3 +1,7 @@
+//author : BGM
+//date : 2014-02-01
+//RWInterface : 데이터 객체를 파일에 입/출력하는 인터페이스
+
 #ifndef BGM_IO_RWINTERFACE_H
 #define BGM_IO_RWINTERFACE_H
 
