@@ -15,7 +15,7 @@ class Wrapper
   const T& data() const {
     return data_;
   }
-  T& data() {
+  T& data() const {
     return const_cast<T&>(static_cast<const Wrapper*>(this)->data());
   }
 
