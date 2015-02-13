@@ -10,6 +10,7 @@ template<class T>
 class TreeNode : public Wrapper<T>
 {
  public:
+  explicit TreeNode(const T &data) : Wrapper(data) { }
   virtual ~TreeNode();
   virtual const TreeNode<T>* child(unsigned int idx)=0;
   virtual TreeNode<T>* child(unsigned int idx)=0;
