@@ -1,6 +1,8 @@
 #ifndef BGM_DATA_TREENODE_H
 #define BGM_DATA_TREENODE_H
 
+#include "wrapper.h"
+
 namespace BGM
 {
 namespace DATA

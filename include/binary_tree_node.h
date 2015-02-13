@@ -1,6 +1,8 @@
 #ifndef BGM_DATA_BINARYTREENODE_H
 #define BGM_DATA_BINARYTREENODE_H
 
+#include "n-ary_tree_node.h"
+
 namespace BGM
 {
 namespace DATA

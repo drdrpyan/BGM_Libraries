@@ -1,6 +1,8 @@
 #ifndef BGM_DATA_NARYTREENODE_H
 #define BGM_DATA_NARYTREENODE_H
 
+#include "tree_node.h"
+
 namespace BGM
 {
 namespace DATA
