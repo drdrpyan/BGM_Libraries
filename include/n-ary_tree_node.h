@@ -6,7 +6,7 @@ namespace BGM
 namespace DATA
 {
 
-template <class T, int num_of_child>
+template <class T, unsigned int num_of_child>
 class NAryTreeNode : public TreeNode<T>
 {
  public:
@@ -31,7 +31,7 @@ class NAryTreeNode : public TreeNode<T>
   }
 
  private:
-  T* child_[num_of_child];
+  NAryTreeNode *child_[num_of_child];
 };
 
 }
