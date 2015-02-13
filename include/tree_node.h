@@ -13,7 +13,7 @@ class TreeNode : public Wrapper<T>
 {
  public:
   explicit TreeNode(const T &data) : Wrapper(data) { }
-  virtual ~TreeNode();
+  virtual ~TreeNode() { }
   virtual const TreeNode<T>* child(unsigned int idx) const = 0;
   virtual TreeNode<T>* child(unsigned int idx) const = 0;
   virtual void set_child(unsigned int idx, const TreeNode<T> *child)=0;
