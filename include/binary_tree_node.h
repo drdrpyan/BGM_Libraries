@@ -27,10 +27,10 @@ class BinaryTreeNode : public NAryTreeNode<T, 2>
                  static_cast<const BinaryTreeNode*>(this)->right_child());
     }
     virtual void set_left_child(const BinaryTreeNode *left_child) {
-
+      set_child(0, left_child);
     }
     virtual void set_right_child(const BinaryTreeNode *right_child) {
-
+      set_child(1, right_child);
     }
 };
 
