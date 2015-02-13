@@ -27,7 +27,7 @@ class NAryTreeNode : public TreeNode<T>
   virtual void set_child(unsigned int idx,
 		                 const NAryTreeNode<T, num_of_child> *child) {
     assert(idx >= num_of_child);
-    child_[idx] = child;
+    child_[idx] = const_cast<NAryTreeNode*>(child);
   }
 
  private:
