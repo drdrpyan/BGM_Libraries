@@ -23,7 +23,7 @@ class NAryTreeNode : public TreeNode<T>
     }
 
     virtual const NAryTreeNode<T, num_of_child>* child(unsigned int idx) const {
-      assert(idx >= num_of_child);
+      assert(idx < num_of_child);
       return child_[idx];
     }
     virtual NAryTreeNode<T, num_of_child>* child(unsigned int idx) {
@@ -31,7 +31,7 @@ class NAryTreeNode : public TreeNode<T>
           static_cast<const NAryTreeNode<T, num_of_child>*>(this)->child(idx));
     }
     virtual void set_child(unsigned int idx, const void *child_node) {
-      assert(idx >= num_of_child);
+      assert(idx < num_of_child);
       child_[idx] = static_cast<NAryTreeNode<T, num_of_child>*>(
                         const_cast<void*>(child_node));
     }
