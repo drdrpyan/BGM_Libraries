@@ -17,7 +17,6 @@ class TreeNode : public Wrapper<T>
   virtual const TreeNode<T>* child(unsigned int idx) const = 0;
   virtual TreeNode<T>* child(unsigned int idx) const = 0;
   virtual void set_child(unsigned int idx, const TreeNode<T> *child)=0;
-	//함수 나중에 포함할 것
 };
 
 }
