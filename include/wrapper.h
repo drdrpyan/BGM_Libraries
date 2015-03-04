@@ -6,7 +6,7 @@ namespace BGM
 namespace DATA
 {
 
-template <class T, class Alloc=std::allocator<T> >
+template <class T>
 class Wrapper
 {
  public:
@@ -15,7 +15,7 @@ class Wrapper
   const T& data() const {
     return data_;
   }
-  T& data() const {
+  T& data() {
     return const_cast<T&>(static_cast<const Wrapper*>(this)->data());
   }
 
